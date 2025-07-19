@@ -4,7 +4,7 @@ import {string, z} from 'zod';
 import { revalidatePath } from 'next/cache';
 import {redirect} from 'next/navigation';
 import postgres from 'postgres';
-import { signIn } from '@/app/auth';
+import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
