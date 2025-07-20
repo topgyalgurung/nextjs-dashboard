@@ -20,6 +20,17 @@ export default function LoginPage() {
         <Suspense>
           <LoginForm />
         </Suspense>
+      <div className="mt-4 rounded bg-gray-100 p-4 text-sm text-gray-700">
+        <p>
+          <strong>Test User</strong>
+        </p>
+        <p>
+          <span className="font-medium">Email:</span> user@nextmail.com
+        </p>
+        <p>
+          <span className="font-medium">Password:</span> 123456
+        </p>
+      </div>
       </div>
     </main>
   );
